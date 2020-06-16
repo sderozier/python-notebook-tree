@@ -10,6 +10,8 @@ Le répertoire `notebooks`contient 1 *notebook* [Jupyter](https://jupyter.org/) 
 
 ## Manipuler les notebooks localement (sur votre machine)
 
+**Remarque importante : ce *notebook* ne fonctionne que sous un environnement Unix (Linux, Mac ou WSL). Les utilisateurs de PowerShell ne pourront, a priori, pas utiliser la librairie Scikit-bio.**
+
 1. Installez miniconda dans un environnement de type Unix (WSL pour Windows, Mac OSX ou Linux)
 
 2. Clonez le dépôt :
@@ -51,27 +53,6 @@ Le répertoire `notebooks`contient 1 *notebook* [Jupyter](https://jupyter.org/) 
     ```
 
 Pour des utilisations ultérieures, seules les étapes 3, 5 et 7 seront nécessaires.
-
-## Remarques pour les utilisateurs de Windows (sans WSL)
-
-Si vous avez installé miniconda sur Windows (mais sans WSL), vous pouvez également installer cet environnement sur votre machine. 
-
-Dans un premier temps, installez `git` si ce n'est pas déjà fait en exécutant cette commande dans un terminal :
-```
-conda install -c conda-forge git
-```
-
-Réalisez ensuite les étapes 2, 3, 4 et 5. 
-
-Pour l'étape 6, exécutez, manuellement et l'une après l'autre, les commandes contenues dans le fichier `binder/postBuild` :
-```
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-jupyter labextension install @jupyterlab/toc
-```
-
-Cette étape peut prendre du temps.
-
-Terminez enfin par l'étape 7.
 
 ## Licence
 
