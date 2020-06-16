@@ -1,0 +1,14 @@
+name: python-notebook-tree
+# channels priority
+# see https://bioconda.github.io/
+# conda-forge has highest prioriy
+channels:
+    - defaults
+    - bioconda
+    - conda-forge
+dependencies:
+    - python=3.7
+    - jupyterlab
+    - ipywidgets
+    - nodejs
+    - scikit-bio
